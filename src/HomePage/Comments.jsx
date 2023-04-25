@@ -93,10 +93,11 @@ const Comments = () => {
             <div><h3>How was your Experience? Leave a Comment</h3></div>
             <div className="forms">
                 <input required className='spacer' value={name}
-                    onChange={handleNameChange} />
+                    onChange={handleNameChange} placeholder='Name'/>
                 <input className='spacer' value={email}
-                    onChange={handleEmailChange} />
+                    onChange={handleEmailChange} placeholder='Email (Optional)'/>
                 <textarea
+                    placeholder='Write here'
                     className='spacer-3 text-area'
                     value={message}
                     onChange={handleMessageChange}
