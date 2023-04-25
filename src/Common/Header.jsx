@@ -90,7 +90,7 @@ const Header = () => {
             
           </div>
           <div className='bars'>
-          <img src={bars} alt='Menu' onClick={openSidebar}/>
+          {!isSidebarOpen && <img src={bars} alt='Menu' onClick={openSidebar}/>}
             </div>
         </div>
     </div>
