@@ -1,47 +1,39 @@
-import styled from '@emotion/styled'
-import { Box, Container } from '@mui/material'
 import React from 'react'
-
-const BackGround = styled(Box)({
-    background: "var(--background-color)",
-    height:"120px",
-    "@media (max-width: 576px)": { 
-        height: "60px" 
-},
-})
+import "./StaticPages.css"
 
 
-const SectionWrapper = styled(Box)({
-    width: '100%',
-     margin: 'auto',
-     fontFamily:"var(--text-font)",
-     textAlign:"left",
-     alignContent:"left",
-     "& h2":{
-        paddingTop:"20px",
-        fontSize:"2rem",
-        fontWeight:"900",
-        opacity:".9",
-        "@media (max-width: 576px)": { 
-            paddingTop:"0px",
-            fontSize:"1.5rem",
-    },
-     },
-     "& p":{
-       fontSize:"1rem",
-       fontWeight:"500",
-       opacity:".8",
-       textAlign:"justify",
-       lineHeight:"2rem",
-       "@media (max-width: 576px)": { 
-        paddingTop:"0px",
-        fontSize:".9rem",
-        lineHeight:"1.5rem",
 
-},
+// const SectionWrapper = styled(Box)({
+//     width: '100%',
+//      margin: 'auto',
+//      fontFamily:"var(--text-font)",
+//      textAlign:"left",
+//      alignContent:"left",
+//      "& h2":{
+//         paddingTop:"20px",
+//         fontSize:"2rem",
+//         fontWeight:"900",
+//         opacity:".9",
+//         "@media (max-width: 576px)": { 
+//             paddingTop:"0px",
+//             fontSize:"1.5rem",
+//     },
+//      },
+//      "& p":{
+//        fontSize:"1rem",
+//        fontWeight:"500",
+//        opacity:".8",
+//        textAlign:"justify",
+//        lineHeight:"2rem",
+//        "@media (max-width: 576px)": { 
+//         paddingTop:"0px",
+//         fontSize:".9rem",
+//         lineHeight:"1.5rem",
 
-     }
-})
+// },
+
+//      }
+// })
 
 
 
@@ -49,10 +41,9 @@ const SectionWrapper = styled(Box)({
 const PrivacyPolicy = () => {
   return (
     <div>
-        <BackGround></BackGround>
-    <SectionWrapper>
+        <div className='background'></div>
+    <div className='page-wrapper'>
 
-        <Container>
         <h2>Privacy Policy</h2>
         
 <p>At Stylish Name Generator, accessible from https://stylish-name.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Stylish Name Generator and how we use it.
@@ -91,8 +82,7 @@ Stylish Name Generator does not knowingly collect any Personal Identifiable Info
 <h3>Consent</h3>
 <p>By using our website, you hereby consent to our Privacy Policy and agree to its Terms and Conditions.</p>
 
-        </Container>
-    </SectionWrapper>
+    </div>
     </div>
   )
 }

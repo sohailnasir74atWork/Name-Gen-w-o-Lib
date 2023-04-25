@@ -1,55 +1,12 @@
-import styled from '@emotion/styled'
-import { Box, Container } from '@mui/material'
 import React from 'react'
-
-const BackGround = styled(Box)({
-  background: "var(--background-color)",
-  height: "120px",
-  "@media (max-width: 576px)": {
-    height: "60px"
-  },
-})
-const SectionWrapper = styled(Box)({
-  width: '100%',
-  margin: 'auto',
-  fontFamily: "var(--text-font)",
-  textAlign: "left",
-  alignContent: "left",
-  "& h2": {
-    paddingTop: "20px",
-    fontSize: "2rem",
-    fontWeight: "900",
-    opacity: ".9",
-    "@media (max-width: 576px)": {
-      paddingTop: "0px",
-      fontSize: "1.5rem",
-    },
-  },
-  "& p": {
-    fontSize: "1rem",
-    fontWeight: "500",
-    opacity: ".8",
-    textAlign: "justify",
-    lineHeight: "2rem",
-    "@media (max-width: 576px)": {
-      paddingTop: "0px",
-      fontSize: ".9rem",
-      lineHeight: "1.5rem",
-    },
-
-  }
-})
-
-
-
+import "./StaticPages.css"
 
 const AboutUs = () => {
   return (
     <div>
-      <BackGround></BackGround>
-      <SectionWrapper>
+      <div className='background'></div>
+      <div className='page-wrapper'>
 
-        <Container>
           <h2>We are ThinkTech</h2>
 
           <p>Thank you for visiting our website, where we are committed to providing you with the best and most stylish names for your online presence. We are ThinkTech, a team of creative and passionate individuals who are dedicated to helping you find the perfect name for your brand.</p>
@@ -64,8 +21,7 @@ const AboutUs = () => {
           <p>We believe in transparency and honesty. We strive to maintain a strong and trustworthy relationship with our customers by providing excellent customer service and support. If you have any questions or concerns, our team is always here to help you.</p>
           <h2>Thank You for Choosing ThinkTech</h2>
           <p>Thank you for choosing ThinkTech. We are excited to continue providing you with the best service and support. If you have any suggestions or feedback, please do not hesitate to reach out to us. We value your opinion and are always looking for ways to improve our platform.</p>
-        </Container>
-      </SectionWrapper>
+      </div>
     </div>
   )
 }

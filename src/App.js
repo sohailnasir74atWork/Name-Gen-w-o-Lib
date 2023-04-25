@@ -1,11 +1,11 @@
 import './App.css';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import Home from './HomePage/Index';
-// import AboutUs from './StaticPages/AboutUs';
+import AboutUs from './StaticPages/AboutUs';
 import Footer from './Common/Footer';
 import Header from './Common/Header';
-// import PrivacyPolicy from './StaticPages/PrivacyPolicy';
-// import ContactUs from './StaticPages/ContactUs';
+import PrivacyPolicy from './StaticPages/PrivacyPolicy';
+import ContactUs from './StaticPages/ContactUs';
 import React, {lazy, Suspense} from 'react';
 import CircularColor from './Common/Loader';
 
@@ -23,9 +23,9 @@ function App() {
           <Header />
           <Routes>
             <Route path='/' element={<Home />} />
-            {/* <Route path='/about-us' element={<AboutUs />} />
+            <Route path='/about-us' element={<AboutUs />} />
             <Route path='/privacy-policy' element={<PrivacyPolicy />} />
-            <Route path='/contact-us' element={<ContactUs />} /> */}
+            <Route path='/contact-us' element={<ContactUs />} />
           </Routes>
 
           <Footer />
