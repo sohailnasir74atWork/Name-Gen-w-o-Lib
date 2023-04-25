@@ -4,7 +4,7 @@ min-height: 100vh;
 }
 .banner-img {
     position: relative;
-    background-image: url(https://res.cloudinary.com/dgupxycnh/image/upload/fl_aavif/v1682330629/herobanner_z3yf9z.avif);
+    background-image: url(https://res.cloudinary.com/dgupxycnh/image/upload/v1682330629/herobanner_z3yf9z.webp);
     background-size: cover;
     height: 500px;
     display: flex;
