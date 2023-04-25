@@ -43,7 +43,7 @@
 
 .logo-destop img {
     height: 100%;
-    width: 100%;
+    width: auto;
 }
 
 @media (max-width: 576px) {
@@ -63,6 +63,10 @@
         position: absolute;
         right: 20px;
         z-index: 1;
+    }
+    .bars img{
+       height: 100%;
+       width: 100%;
     }
 }
 
@@ -170,5 +174,5 @@ li:hover {
     background-color: white;
     position: absolute;
     height: 30px;
-    width: 100%;
+    width: auto;
 }
