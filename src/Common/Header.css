@@ -42,13 +42,17 @@
 }
 
 .logo-destop img {
-    height: 100%;
+    height: 80px;
     width: auto;
 }
 
 @media (max-width: 576px) {
     .logo-destop {
+        height: 40px;
+    }
+    .logo-destop img {
         height: 35px;
+        width: auto;
     }
 }
 
