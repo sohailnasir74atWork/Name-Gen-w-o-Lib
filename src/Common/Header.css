@@ -34,6 +34,7 @@
 }
 .logo-destop img {
     height: 100%;
+    width: 100%;
 }
 @media (max-width: 576px) {
     .logo-destop{
