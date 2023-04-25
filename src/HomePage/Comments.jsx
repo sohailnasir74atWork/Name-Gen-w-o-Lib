@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import CircularColor from '../Common/Loader'
-import "./Comment.css"
+// import "./Comment.css"
 
 const Comments = () => {
     const [name, setName] = useState('');

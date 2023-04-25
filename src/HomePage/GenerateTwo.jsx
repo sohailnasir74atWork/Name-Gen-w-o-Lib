@@ -2,7 +2,7 @@ import React  from 'react'
 import { useState } from 'react'
 import { styles, symbols } from './Data';
 // import gtag from 'ga-gtag';
-import "./Generate.css"
+// import "./Generate.css"
 
 const GenerateOne = () => {
     const [styledName, setStyledName] = useState([])

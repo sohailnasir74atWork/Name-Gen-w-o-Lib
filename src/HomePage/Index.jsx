@@ -1,6 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 import GenerateOne from './GenerateOne';
-import "./Index.css"
+// import "./Index.css"
 // import Comments from './Comments';
 // import GenerateTwo from './GenerateTwo';
 // import GenerateThree from './GenerateThree';

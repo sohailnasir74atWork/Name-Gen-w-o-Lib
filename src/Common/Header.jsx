@@ -4,7 +4,7 @@ import logo from "../logo1.svg"
 // import HeaderSidebar from './HeaderSideBar'
 import "../../src/App.css"
 import { useLockBodyScroll } from './ScrollCustomHook'
-import "./Header.css"
+// import "./Header.css"
 // export const Sidebar = styled(Box)({
 //   position: 'fixed',
 //   display: 'flex',

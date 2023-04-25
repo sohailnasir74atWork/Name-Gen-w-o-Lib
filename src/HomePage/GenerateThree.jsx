@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react'
 import { styles } from './Data';
 import { symbols } from './Data';
 // import gtag from 'ga-gtag';
-import "./Generate.css"
+// import "./Generate.css"
 
 const GenerateTwo = () => {
     const [active, setActive] = useState(1);
