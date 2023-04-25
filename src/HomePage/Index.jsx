@@ -4,7 +4,7 @@ import "./Index.css"
 // import Comments from './Comments';
 // import GenerateTwo from './GenerateTwo';
 // import GenerateThree from './GenerateThree';
-import BannerImg from "../banner.webp"
+import BannerImg from "../herobanner.webp"
 const Comments = lazy(()=> import("./Comments"))
 const GenerateTwo = lazy(()=> import("./GenerateTwo"))
 const GenerateThree = lazy(()=> import("./GenerateThree"))
