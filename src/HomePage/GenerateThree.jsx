@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 import { styles } from './Data';
 import { symbols } from './Data';
-import gtag from 'ga-gtag';
+// import gtag from 'ga-gtag';
 import "./Generate.css"
 
 const GenerateTwo = () => {
@@ -17,9 +17,9 @@ const GenerateTwo = () => {
                 timer: 700,
             });
         });
-        gtag('event', 'Sec-3- Copied', {
-            poll_title: 'sec-3',
-        })
+        // gtag('event', 'Sec-3- Copied', {
+        //     poll_title: 'sec-3',
+        // })
     };
     /////////////////////////////////////////////////////////////////
     const filteredArr = symbols.filter(obj => obj.left === obj.right);
@@ -42,9 +42,9 @@ const GenerateTwo = () => {
         } catch (err) {
             console.error('Error sharing:', err);
         }
-        gtag('event', 'Sec-3- Share', {
-            poll_title: 'sec-3',
-        })
+        // gtag('event', 'Sec-3- Share', {
+        //     poll_title: 'sec-3',
+        // })
     };
 
     const handleActiveButton = (value) => {

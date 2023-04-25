@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { styles } from './Data';
-import gtag from 'ga-gtag';
+// import gtag from 'ga-gtag';
 import "./Generate.css"
 
 
@@ -22,9 +22,9 @@ const GenerateOne = () => {
                 timer: 700,
             });
         });
-        gtag('event', 'Sec-1- Copied- Simple', {
-            poll_title: 'sec-1',
-        })
+        // gtag('event', 'Sec-1- Copied- Simple', {
+        //     poll_title: 'sec-1',
+        // })
     };
 
     const handleCopy2 = () => {
@@ -34,9 +34,9 @@ const GenerateOne = () => {
                 timer: 700,
             });
         });
-        gtag('event', 'Sec-1- Copied- Rendom', {
-            poll_title: 'sec-1',
-        })
+        // gtag('event', 'Sec-1- Copied- Rendom', {
+        //     poll_title: 'sec-1',
+        // })
     };
     const handleClickShare = async () => {
         try {
@@ -49,9 +49,10 @@ const GenerateOne = () => {
         } catch (err) {
             console.error('Error sharing:', err);
         }
-        gtag('event', 'Sec-1- Share', {
-            poll_title: 'sec-1',
-        })
+        // gtag('event', 'Sec-1- Share', {
+        //     poll_title: 'sec-1',
+        // })
+
     };
     const handleNextGenrate = () => {
         if (styledName.length < 1) {
