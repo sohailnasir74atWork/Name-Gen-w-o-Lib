@@ -14,10 +14,11 @@
     font-family: var(--text-font);
     text-align: left;
     align-content: left;
+    padding: 30px;
   }
   @media (max-width: 576px) {
     .page-wrapper {
-        width: 90%;
+        width: 80%;
               }
   }
   .page-wrapper h2 {
