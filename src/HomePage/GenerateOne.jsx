@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { styles } from './Data';
 // import gtag from 'ga-gtag';
-// import "./Generate.css"
+import "./Generate.css"
 
 
 
