@@ -1,149 +1,9 @@
 import React, { useState } from "react";
 import "../HomePage/Comment.css"
+import facebook from "../../src/facebook.png"
+import twitter from "../../src/twitter.png"
+import insta from "../../src/insta.png"
 
-// const BackGround = styled(Box)({
-//     background: "var(--background-color)",
-//     height:"120px",
-//     width:"100%",
-//     "@media (max-width: 576px)": { 
-//         height: "60px" 
-// },
-// })
-
-// const SectionWrapper = styled(Card)({
-//   display: "flex",
-//   justifyContent: "center",
-//   height: "100%",
-//   width: "80%",
-//   margin: "100px auto",
-//   background:"var(--color-three)",
-//   boxShadow: 'none',
-//   "@media (max-width: 768px)": {
-//     flexDirection:"column",
-//     margin: '1em',
-//     width: "90%",
-//   }
-// });
-// const SubSection = styled(Box)({
-//   width: "50%",
-//   display: "flex",
-//   "@media (max-width: 768px)": {
-//     width:"100%"
-//   }
-// });
-
-// const LeftSection = styled(Box)({
-//     background:"lightblue",
-//     width: "100%",
-//   padding:"20px",
-//   "@media (max-width: 768px)": {
-//     padding: '1em 0.7em'
-//   },
-//   "& .heading":{
-//     display:"flex",
-//     fontFamily:"var(--text-font)",
-//     justifyContent:"center",
-//     padding:"10px 0px",
-//     flexDirection:"column",
-//     width:"100%"
-//   },
-//   "& .sub-text":{
-//     fontFamily:"var(--text-font)",
-//     color:"var(--primary-color)",
-//     textAlign:"left",
-//     margin: '25px 0px 15px 0px',
-//     fontFamily:"var(--text-font)",
-
-//   },
-//   "& li":{
-//     padding:"3px 0px",
-//     marginBottom: '10px',
-//   },
-//   "& .social-media":{
-//     display:"flex",
-//     alignItems:"center",
-//     "& svg":{
-//       fill: 'var(--primary-color)'
-//     },
-//     "& .list__flex":{
-//       display:"flex",
-//       alignItems:"center",
-//       gap: '0.5em',
-//       "&.address-link":{
-//         alignItems: 'start'
-//       },
-//       "&.social--links":{
-//         gap: '0.5em'
-//       }
-//     },
-//   },
-//   "& .mr-0":{
-//     margin:"0px"
-//   },
-// });
-
-// const RightSection = styled(Box)({
-//     fontFamily:"var(--text-font)",
-//   width: "100%",
-//   padding:"20px",
-//   "@media (max-width: 768px)": {
-//     padding: '1em 0.7em'
-//   },
-//   "& .spacer":{
-//     width:"90%",
-//     padding:"0px 0px",
-//     display:"flex",
-//     textAlign:"start",
-//     margin:"20px auto",
-//     justifyContent:"start"
-//   },
-//   "& .submit-button": {
-//     height: "60px",
-//     fontFamily: "var(--text-font)",
-//     color: "white",
-//     fontWeight: "900",
-//     background: "var(--color-two)",
-//     display: "flex",
-//     position: "relative",
-//     justifyContent: "center",
-//     borderRadius: "0px",
-
-//     alignItems: "center",
-//     width: "15rem",
-//     margin: "0px auto",
-//     "&:hover": {
-//         background: "var(--color-one)",
-//         color: "black"
-
-//     }, "@media (max-width: 576px)": {
-//         height: "40px",
-//         "&:hover": {
-//             background: "var(--color-two)",
-//             color: "var(--color-three)",
-//         },
-//         "&:active": {
-//             background: "var(--color-one)",
-//             color: "white",
-//         }
-
-//     },
-// },
-//   "& .heading":{
-//     display:"flex",
-//     justifyContent:"center",
-//     marginLeft:"-30px",
-//     padding:"10px 0px"
-//   },
-//   "& .mr-0":{
-//     margin:"0px"
-//   },
-//   "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline": {
-//     borderColor: "var(--secondary-color)",
-// },
-// "& .MuiInputLabel-outlined.Mui-focused":{
-//     color:"var(--secondary-color)"
-// }
-// });
 
 const ContactUs = () => {
 
@@ -227,32 +87,39 @@ const ContactUs = () => {
               <div>
                 <h2>GET IN TOUCH</h2>
                 <div>
+                
                   <p>
                     Have a question or need more information about ThinkTech?
                     <br />
                     Contact us and our team will get back to you as soon as possible.
                   </p>
-                  <div>
-                    <ul>
+                  <ul>
                       <li>
                         <a href="mailto:support@stylish-names.com" target='_blank' className="list__flex">
                           <span>support@stylish-names.com</span>
                         </a>
-                      </li>
-                      <li>
-                        <span className="list__flex social--links">
+                      </li></ul>
+                  <div>
+                  <p>You can also reach us through our social media accounts on Twitter, Facebook, and Instagram. Follow us to stay updated on our latest products, promotions, and news.</p>
+                    <ul>
+                                       
+                      
+                        <span className="social">
                           <a href="#" target='_blank'>
+                          <img src={facebook} alt="facebook"/>
+
                           </a>
                           <a href="" target='_blank'
                             title="The ThinkTech on Twitter">
+                              <img src={twitter} alt="twitter"/>
                           </a>
-                          <a href="#" target='_blank'>
-                          </a>
-                          <a href="" target='_blank'
+                                                   <a href="" target='_blank'
                             title="The ThinkTech on Instagram">
+                          <img src={insta} alt="insta"/>
+
                           </a>
                         </span>
-                      </li>
+                     
                       {/* <li>
                         <a href=""  target='_blank' 
                         className="">

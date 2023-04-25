@@ -84,3 +84,14 @@
     text-align: justify;
 
 }
+.social{
+    display: flex;
+    height: 30px;
+}
+
+.social a {
+    padding-right: 20px;
+}
+.social a img {
+    height: 100%;
+}
