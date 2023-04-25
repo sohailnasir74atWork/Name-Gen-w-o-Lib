@@ -40,7 +40,7 @@ const Header = () => {
            
               <div className='logo-destop'>
                 <Link to="/">
-                  <img src={logo} alt="logo" />
+                  <img src={logo} alt="logo" height="" width=""/>
                 </Link>
               </div>
            
@@ -93,7 +93,7 @@ const Header = () => {
             
           </div>
           <div className='bars'>
-          {!isSidebarOpen && <img src={bars} alt='Menu' onClick={openSidebar}/>}
+          {!isSidebarOpen && <img src={bars} alt='Menu' onClick={openSidebar} height="" width=""/>}
             </div>
         </div>
     </div>

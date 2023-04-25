@@ -27,7 +27,7 @@ const sidebarItem = [
       <div className='sidebar' id="sidebarMenu" >
         <div className="overlay" onClick={close}>
           <nav onClick={(event) => event.stopPropagation()}>
-            <div className='top-div'><img src={logo2} alt="logo" style={{height:"50px"}}/></div>
+            <div className='top-div'><img src={logo2} alt="logo" height="50px" width=""/></div>
             <ul>
               {sidebarItem.map(item => {
                 return (
@@ -39,7 +39,7 @@ const sidebarItem = [
                 )})}
             </ul>  
             <div className="closebtn" onClick={close}>
-            <img src={closeButton} alt='close'/>
+            <img src={closeButton} alt='close' height="" width=""/>
           </div>  
           </nav>
          

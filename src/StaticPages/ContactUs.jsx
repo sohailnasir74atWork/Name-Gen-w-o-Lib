@@ -106,16 +106,16 @@ const ContactUs = () => {
                       
                         <span className="social">
                           <a href="#" target='_blank'>
-                          <img src={facebook} alt="facebook"/>
+                          <img src={facebook} alt="facebook" height="" width=""/>
 
                           </a>
                           <a href="" target='_blank'
                             title="The ThinkTech on Twitter">
-                              <img src={twitter} alt="twitter"/>
+                              <img src={twitter} alt="twitter" height="" width=""/>
                           </a>
                                                    <a href="" target='_blank'
                             title="The ThinkTech on Instagram">
-                          <img src={insta} alt="insta"/>
+                          <img src={insta} alt="insta" height="" width=""/>
 
                           </a>
                         </span>
