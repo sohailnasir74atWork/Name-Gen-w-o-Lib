@@ -21,14 +21,15 @@ function App() {
     <BrowserRouter>
         <div className="App" id="3000">
           <Header />
+          <Suspense>
           <Routes>
             <Route path='/' element={<Home />} />
-            <Suspense>
             <Route path='/about-us' element={<AboutUs />} />
             <Route path='/privacy-policy' element={<PrivacyPolicy />} />
             <Route path='/contact-us' element={<ContactUs />} />
-            </Suspense>
           </Routes>
+          </Suspense>
+
 
           <Footer />
         </div>
