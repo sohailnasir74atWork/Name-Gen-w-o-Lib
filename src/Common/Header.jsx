@@ -1,11 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState, lazy, Suspense } from 'react'
 import { Link } from 'react-router-dom'
 import logo from "../logo1.svg"
-import HeaderSidebar from './HeaderSideBar'
 import "../../src/App.css"
 import { useLockBodyScroll } from './ScrollCustomHook'
 import "./Header.css"
 import bars from "../bars.png"
+ 
+const HeaderSidebar = lazy(()=> import("./HeaderSideBar"))
+
 const Header = () => {
 
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
@@ -30,8 +32,9 @@ const Header = () => {
   useLockBodyScroll(isSidebarOpen)
   return (
     <div className='wrapper-header'>
+      <Suspense>
         <div id="slide" style={{ transform: "translateX(100%)" }}>
-          {isSidebarOpen && <HeaderSidebar isOpen={isSidebarOpen} close={closeSidebar} />}</div>
+          {isSidebarOpen && <HeaderSidebar isOpen={isSidebarOpen} close={closeSidebar} />}</div></Suspense>
         <div className="grid-container">
           <div className="grid-item">
            
