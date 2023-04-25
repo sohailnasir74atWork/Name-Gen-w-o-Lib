@@ -7,6 +7,7 @@ min-height: 100vh;
     background-image: url(https://res.cloudinary.com/dgupxycnh/image/upload/v1682330629/herobanner_z3yf9z.webp);
     background-size: cover;
     height: 500px;
+    width: 100%;
     display: flex;
     justify-content: center;
     background-repeat: no-repeat;
@@ -26,6 +27,7 @@ min-height: 100vh;
 @media (max-width: 576px) {
     .banner-img {
         height: 200px;
+        width: 100%;
     }
 }
 .main-heading {
