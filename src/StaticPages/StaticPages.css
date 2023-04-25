@@ -9,18 +9,13 @@
   }
 
 .page-wrapper {
-    width: 100%;
     margin: auto;
     font-family: var(--text-font);
     text-align: left;
     align-content: left;
     padding: 30px;
   }
-  @media (max-width: 576px) {
-    .page-wrapper {
-        width: 80%;
-              }
-  }
+ 
   .page-wrapper h2 {
     padding-top: 20px;
     font-size: 2rem;
