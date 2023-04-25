@@ -1,0 +1,57 @@
+.wrapper-header {
+    height: 100px;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+}
+.grid-container {
+    display: grid;
+    padding: 20px 30px;
+    grid-template-columns: repeat(8, 1fr); /* Three equal columns */
+    grid-gap: 0px; /* Spacing between grid items */
+  }
+  @media (max-width: 576px) {
+    .grid-container {
+        padding: 10px;
+      }
+}
+.p-l-40 {
+    padding-left: 40px;
+}
+.grid-item {
+    justify-content: center;
+    display: flex;
+    align-items: flex-end;
+  }
+  .grid-item a {
+
+    color: white;
+    font-weight: 700;
+    font-size: .9rem;
+  }
+.logo-destop{
+    height: 80px;
+}
+.logo-destop img {
+    height: 100%;
+}
+@media (max-width: 576px) {
+    .logo-destop{
+        height: 35px;
+    }
+}
+.bars {
+    display: none;
+}
+@media (max-width: 576px) {
+    .bars {
+        display: flex;
+    }
+}
+.menu {
+}
+@media (max-width: 576px) {
+    .menu {
+        display: none;
+    }
+}

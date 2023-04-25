@@ -1,0 +1,13 @@
+.footer-wrapper {
+    position: absolute;
+    width: 100%;
+    margin-bottom: 0px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--background-color);
+    color: white;
+    font-family: var(--text-font);
+  }
+  
