@@ -1,7 +1,7 @@
 import React  from 'react'
 import { useState } from 'react'
 import { styles, symbols } from './Data';
-// import gtag from 'ga-gtag';
+import gtag from 'ga-gtag';
 import "./Generate.css"
 
 const GenerateOne = () => {
@@ -32,9 +32,9 @@ const GenerateOne = () => {
                 timer: 700,
             });
         });
-        // gtag('event', 'Sec-2- Copied', {
-        //     poll_title: 'sec-2',
-        //   })
+        gtag('event', 'Sec-2- Copied', {
+            poll_title: 'sec-2',
+          })
     };
     const handleNextGenrate = async () => {
 
@@ -64,9 +64,9 @@ const GenerateOne = () => {
         } catch (err) {
           console.error('Error sharing:', err);
         }
-        // gtag('event', 'Sec-2- Share', {
-        //     poll_title: 'sec-2',
-        //   })
+        gtag('event', 'Sec-2- Share', {
+            poll_title: 'sec-2',
+          })
       };
     const clearScreen = () => {
         const inputField = document.getElementById("2");
