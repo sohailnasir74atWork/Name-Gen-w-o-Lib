@@ -24,9 +24,9 @@ const GenerateOne = () => {
                 timer: 700,
             });
         });
-        // gtag('event', 'Sec-1- Copied- Simple', {
-        //     poll_title: 'sec-1',
-        // })
+        gtag('event', 'Sec-1- Copied- Simple', {
+            poll_title: 'sec-1',
+        })
     };
 
     const handleCopy2 = () => {
@@ -56,9 +56,9 @@ const GenerateOne = () => {
         } catch (err) {
             console.error('Error sharing:', err);
         }
-        // gtag('event', 'Sec-1- Share', {
-        //     poll_title: 'sec-1',
-        // })
+        gtag('event', 'Sec-1- Share', {
+            poll_title: 'sec-1',
+        })
 
     };
     const handleNextGenrate = () => {
