@@ -2,6 +2,8 @@ import React from 'react'
 import { useState } from 'react'
 import { styles } from './Data';
 // import gtag from 'ga-gtag';
+import ReactGA from 'react-ga';
+
 import "./Generate.css"
 
 
@@ -34,6 +36,11 @@ const GenerateOne = () => {
                 timer: 700,
             });
         });
+        ReactGA.event({
+            category: 'Button',
+            action: 'Click',
+            label: 'My Button'
+          });
         // gtag('event', 'Sec-1- Copied- Rendom', {
         //     poll_title: 'sec-1',
         // })

@@ -8,6 +8,8 @@ import PrivacyPolicy from './StaticPages/PrivacyPolicy';
 import ContactUs from './StaticPages/ContactUs';
 import React, {lazy, Suspense} from 'react';
 import CircularColor from './Common/Loader';
+import { useEffect } from 'react';
+import ReactGA from 'react-ga';
 
 // const PrivacyPolicy = lazy(()=>import("./StaticPages/PrivacyPolicy"))
 // const ContactUs = lazy(()=>import("./StaticPages/ContactUs"))
@@ -17,6 +19,12 @@ const renderLoader = () => <><CircularColor/></>
 
 
 function App() {
+
+  useEffect(() => {
+    ReactGA.initialize('G-XJPTYDF0CE');
+  }, []);
+
+
   return (
     <BrowserRouter>
         <div className="App" id="3000">
