@@ -17,18 +17,8 @@ import { useEffect } from 'react';
 
 function App() {
 
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-XJPTYDF0CE';
-    script.async = true;
-    document.body.appendChild(script);
+ 
 
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-XJPTYDF0CE');
-  }, []);
   return (
     <BrowserRouter>
         <div className="App" id="3000">
