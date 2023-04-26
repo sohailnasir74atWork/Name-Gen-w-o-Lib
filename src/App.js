@@ -16,19 +16,18 @@ import { useEffect } from 'react';
 // const Footer = lazy(()=> import("./Common/Footer"))
 
 function App() {
-  const TRACKING_ID = 'G-XJPTYDF0CE';
 
   useEffect(() => {
-    const loadGA = async () => {
-      const ga = await import('react-ga');
-      ga.initialize(TRACKING_ID);
-      ga.gtag('event', 'page_view', {
-        page_location: window.location.href,
-        page_title: document.title,
-        send_to: TRACKING_ID,
-      });
-    };
-    loadGA();
+    const script = document.createElement('script');
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-XJPTYDF0CE';
+    script.async = true;
+    document.body.appendChild(script);
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XJPTYDF0CE');
   }, []);
   return (
     <BrowserRouter>
