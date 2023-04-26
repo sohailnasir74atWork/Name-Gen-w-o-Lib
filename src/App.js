@@ -22,6 +22,11 @@ function App() {
 
   useEffect(() => {
     ReactGA.initialize('G-XJPTYDF0CE');
+    ReactGA.gtag('event', 'page_view', {
+      page_location: window.location.href,
+      page_title: document.title,
+      send_to: 'G-XJPTYDF0CE'
+    });
   }, []);
 
 
