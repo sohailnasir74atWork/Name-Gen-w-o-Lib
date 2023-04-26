@@ -14,23 +14,22 @@ import { useEffect } from 'react';
 // const ContactUs = lazy(()=>import("./StaticPages/ContactUs"))
 // const AboutUs = lazy(()=>import("./StaticPages/AboutUs"))
 // const Footer = lazy(()=> import("./Common/Footer"))
-const renderLoader = () => <><CircularColor/></>
-
 
 function App() {
+  const TRACKING_ID = 'G-XJPTYDF0CE';
 
   useEffect(() => {
-    (async () => {
-      const ReactGA = await import('react-ga');
-      ReactGA.initialize('G-XJPTYDF0CE');
-      ReactGA.gtag('event', 'page_view', {
+    const loadGA = async () => {
+      const ga = await import('react-ga');
+      ga.initialize(TRACKING_ID);
+      ga.gtag('event', 'page_view', {
         page_location: window.location.href,
         page_title: document.title,
-        send_to: 'G-XJPTYDF0CE'
+        send_to: TRACKING_ID,
       });
-    })();
+    };
+    loadGA();
   }, []);
-
   return (
     <BrowserRouter>
         <div className="App" id="3000">
