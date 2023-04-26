@@ -9,7 +9,6 @@ import ContactUs from './StaticPages/ContactUs';
 import React, {lazy, Suspense} from 'react';
 import CircularColor from './Common/Loader';
 import { useEffect } from 'react';
-import ReactGA from 'react-ga';
 
 // const PrivacyPolicy = lazy(()=>import("./StaticPages/PrivacyPolicy"))
 // const ContactUs = lazy(()=>import("./StaticPages/ContactUs"))
@@ -21,14 +20,16 @@ const renderLoader = () => <><CircularColor/></>
 function App() {
 
   useEffect(() => {
-    ReactGA.initialize('G-XJPTYDF0CE');
-    ReactGA.gtag('event', 'page_view', {
-      page_location: window.location.href,
-      page_title: document.title,
-      send_to: 'G-XJPTYDF0CE'
-    });
+    (async () => {
+      const ReactGA = await import('react-ga');
+      ReactGA.initialize('G-XJPTYDF0CE');
+      ReactGA.gtag('event', 'page_view', {
+        page_location: window.location.href,
+        page_title: document.title,
+        send_to: 'G-XJPTYDF0CE'
+      });
+    })();
   }, []);
-
 
   return (
     <BrowserRouter>
