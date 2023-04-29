@@ -9,11 +9,13 @@
   }
 
 .page-wrapper {
-    margin: auto;
+    margin:100px  auto;
     font-family: var(--text-font);
     text-align: left;
     align-content: left;
     padding: 30px;
+    width: 70%;
+    background-color: white;
   }
  
   .page-wrapper h2 {
