@@ -5,7 +5,7 @@ min-height: 100vh;
 }
 .banner-img {
     position: relative;
-    background-image: url(https://res.cloudinary.com/dgupxycnh/image/upload/v1682439683/banner_s4cusl.webp);
+    background-image: url(../bannerImg2.webp);
     background-size: cover;
     height: 500px;
     width: 100%;
