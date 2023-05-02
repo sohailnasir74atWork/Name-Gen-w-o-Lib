@@ -170,22 +170,22 @@ const GenerateOne = () => {
 
                 <input id="1" className='input-name' type='text' placeholder='Write  Your Name Here' autoComplete='off' onKeyUp={handleChange} />
                 <button className="primary-button w-20" onClick={clearScreen}>
-                    Clear
+                    CLEAR
                 </button>
             </div>
             <div className='btn-cont'>
                 <button className="primary-button w-20" onClick={handlePre}>
-                    prev</button>
+                    PREV</button>
                 <button className="primary-button w-60" onClick={handleNextGenrate}>
-                    Generate
+                    GENERATE
                 </button>
                 <button className="primary-button w-20" onClick={() => { handleNextGenrate() }}>
-                    Next
+                    NEXT
                 </button>
             </div>
             <div className='btn-cont-share'>
                 <button className="primary-button w-95-auto" onClick={handleClickShare}>
-                    Share website with friends!</button>
+                SHARE WITH YOUR FRIENDS !</button>
             </div>
         </div>
     )

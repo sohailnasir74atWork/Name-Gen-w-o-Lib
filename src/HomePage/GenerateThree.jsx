@@ -76,12 +76,12 @@ const GenerateTwo = () => {
                     onChange={handleChange}
                 />
                 <button className="primary-button w-20" onClick={handleCopy}>
-                    Copy</button>
+                    COPY</button>
             </div>
             <div className='key-pad'>
                 <div className='button-cont'>
-                    <div className='w-50'><button className={`primary-button w-100 ${active === 2 ? "inactive w-100" : ""}`} onClick={() => handleActiveButton(1)}>select symbols</button></div>
-                    <div className='w-50'><button className={`primary-button w-100 ${active === 1 ? "inactive w-100" : ""}`} onClick={() => handleActiveButton(2)} >select characters</button></div>
+                    <div className='w-50'><button className={`primary-button w-100 ${active === 2 ? "inactive w-100" : ""}`} onClick={() => handleActiveButton(1)}>SELECT SYMBOLS</button></div>
+                    <div className='w-50'><button className={`primary-button w-100 ${active === 1 ? "inactive w-100" : ""}`} onClick={() => handleActiveButton(2)} >SELECT CHARACTER</button></div>
                 </div>
                 {active === 1 && <div className='symbol-cont-heading'>
                     <span className='heading-sub'>Simple Symbols</span>
@@ -142,10 +142,10 @@ const GenerateTwo = () => {
                 {/* <Button className="pre-next-btn ml-0" variant="outlined" startIcon={<ContentCopyIcon />} onClick={handleCopy}>
                     Copy</Button> */}
                 <button className="primary-button w-80" onClick={handleClickShare}>
-                    Share website with friends!
+                    SHARE WITH YOUR FRIENDS !
                 </button>
                 <button className="primary-button w-20" onClick={clearScreen}>
-                    Clear
+                    CLEAR
                 </button>
             </div>
         </div>

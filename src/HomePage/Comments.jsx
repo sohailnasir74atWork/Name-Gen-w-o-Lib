@@ -104,7 +104,7 @@ const Comments = () => {
                 />
             </div>
             <button className="primary-button submit-button" variant="outlined" onClick={handleSubmit}>
-                Submit
+                SUBMIT
             </button>
             <div className="spacer-2"><h3>Comments</h3></div>
             {loading && <div style={{ display: "flex", justifyContent: "center", padding: "6rem 1rem" }}><CircularColor /></div>}
