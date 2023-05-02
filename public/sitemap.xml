@@ -1,26 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-
-<url>
-  <loc>https://stylish-names.com/</loc>
-  <lastmod>2023-04-25T15:17:03+00:00</lastmod>
-</url>
-<url>
-  <loc>https://stylish-names.com/contact-us</loc>
-  <lastmod>2023-04-25T15:17:03+00:00</lastmod>
-</url>
-<url>
-  <loc>https://stylish-names.com/about-us</loc>
-  <lastmod>2023-04-25T15:17:03+00:00</lastmod>
-</url>
-<url>
-  <loc>https://stylish-names.com/privacy-policy</loc>
-  <lastmod>2023-04-25T15:17:03+00:00</lastmod>
-</url>
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://stylish-names.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://stylish-names.com/privacy-policy</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://stylish-names.com/contact-us</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://stylish-names.com/about-us</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
